@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="dfa7f689-fee0-4d72-b427-11b3404166b8" name="TerryBryant" url="http://216.151.5.210">
+        <fileTransfer host="216.151.5.210" port="21" rootFolder="/domains/service.terrybryant.com/public_html" password="dfcedffedffcdfccdf98dfd9dfe9dfda" username="terryb">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="21" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
