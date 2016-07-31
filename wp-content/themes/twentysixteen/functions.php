@@ -26,6 +26,27 @@
  */
 
 /**
+ * ACF Global Options
+ */
+if( function_exists('acf_add_options_page') ) {
+
+    acf_add_options_page(array(
+        'page_title' 	=> 'Global',
+        'menu_title'	=> 'Global',
+        'menu_slug' 	=> 'global',
+        'capability'	=> 'edit_posts',
+        'redirect'		=> false
+    ));
+
+    /*acf_add_options_sub_page(array(
+        'page_title' 	=> 'Header',
+        'menu_title'	=> 'Header',
+        'parent_slug'	=> 'shared',
+    ));*/
+
+}
+
+/**
  * Twenty Sixteen only works in WordPress 4.4 or later.
  */
 if ( version_compare( $GLOBALS['wp_version'], '4.4-alpha', '<' ) ) {
