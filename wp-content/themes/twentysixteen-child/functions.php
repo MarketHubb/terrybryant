@@ -5,6 +5,7 @@
 if (!is_admin()) {
     wp_register_style('bootstrap-styles', get_stylesheet_directory_uri() . '/css/bootstrap.min.css');
     wp_register_script('bootstrap-scripts', get_stylesheet_directory_uri() . '/js/bootstrap.min.js', array('jquery'), '', true);
+    wp_register_script('font-awesome-scripts', 'https://use.fontawesome.com/284b9b6460.js">', array('jquery'), '', true);
 }
 
 /**
@@ -12,7 +13,8 @@ if (!is_admin()) {
  */
 if (!is_admin()) {
     wp_enqueue_style('bootstrap-styles');
-    wp_enqueue_script('bootstrap-scripts');
+    wp_enqueue_style('font-awesome');
+    wp_enqueue_script('font-awesome-scripts');
 }
 
 /**

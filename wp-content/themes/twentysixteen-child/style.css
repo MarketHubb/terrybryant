@@ -1,5 +1,19 @@
-/*
- Theme Name:   Twenty Sixteen Child
- Description:  Twenty Sixteen Child Theme
- Template:     twentysixteen
-*/
+/* Global */
+body {
+    margin: 0;
+}
+.text-center {
+    text-align: center;
+}
+/* Header */
+#logo {
+    max-width: 180px;
+}
+#phone-container {
+    text-align: right;
+}
+/* Banner */
+#banner-container {
+    background-size: cover;
+    color: #fff;
+}
