@@ -449,5 +449,11 @@ label#label_1_5_1 {
     #services-tabs-title-ul li a {
         display: block;
     }
+    .guarantee-description {
+        width: 100%;
+    }
+    #logos-container .col-xs-3 {
+        padding: 5px;
+    }
 
 }
