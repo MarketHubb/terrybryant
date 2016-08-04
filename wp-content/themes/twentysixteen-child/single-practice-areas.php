@@ -8,7 +8,7 @@
         <div class="row">
             <div class="col-xs-6" id="logo-container">
                 <?php $logo = get_field('global_practice_png_logo', 'option'); ?>
-                <img src="<?php get_stylesheet_directory_uri() . '/images/Terry-Bryant-Logo.svg' ?>" onerror="this.src='<?php echo $logo['url']; ?>'; this.onerror=null;">
+                <img id="logo"> src="<?php get_stylesheet_directory_uri() . '/images/Terry-Bryant-Logo.svg' ?>" onerror="this.src='<?php echo $logo['url']; ?>'; this.onerror=null;">
                 <!-- <img src="<?php get_stylesheet_directory_uri() . '/images/Terry-Bryant-Logo.svg' ?>" id="logo" alt="" onerror="this.src='<?php echo $logo['url']; ?>'"> -->
             </div>
             <div class="col-xs-6" id="phone-container">
