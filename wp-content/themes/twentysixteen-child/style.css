@@ -155,7 +155,8 @@ p {
 }
 /* Youtube */
 .youtube-title {
-    margin: 2em 0 0;
+    margin: 1em 0 0;
+    text-transform: uppercase;
 }
 .youtube-description {
     font-size: 1.3em;
@@ -183,6 +184,7 @@ p {
     padding: 4px 10px;
     border-radius: 3px;
     font-size: 18px;
+    display: block;
 }
 #services-tabs-title-ul li.active > a {
     color: #fff;
