@@ -10,6 +10,7 @@ if (!is_admin()) {
     wp_register_script('font-awesome-scripts', 'https://use.fontawesome.com/284b9b6460.js">', array('jquery'), '', true);
     wp_register_script('apex-chat', 'http://www.apexchat.net/scripts/invitation.ashx?company=terrybryant', array('jquery'), '', true);
     wp_register_script('ri-scripts', get_stylesheet_directory_uri() . '/js/ri-scripts.js', array('jquery'), '', true);
+    wp_register_script('ri-tracking-scripts', get_stylesheet_directory_uri() . '/js/ri-tracking-scripts.js', array('jquery'), '', true);
 }
 
 /**
@@ -23,6 +24,7 @@ if (!is_admin()) {
     wp_enqueue_script('bootstrap-scripts');
     wp_enqueue_script('practice-scripts');
     wp_enqueue_script('ri-scripts');
+    wp_enqueue_script('ri-tracking-scripts');
 }
 
 if (!is_admin() && $GLOBALS['pagenow'] !== 'wp-login.php') {
