@@ -56,7 +56,7 @@
 
 <script type="text/javascript">
     window.ChatInterceptor = function () {
-        ga('send', 'event', 'ApexChat', 'Chat', 'Lead', '1');
+        __gaTracker('send', 'event', 'ApexChat', 'Chat', 'Lead', '1');
     };
 </script>
 
