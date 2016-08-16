@@ -67,12 +67,12 @@ function mh_remove_menus()
 
     // Submenu pages
     remove_submenu_page( 'index.php', 'update-core.php' );
-    remove_submenu_page( 'gf_edit_forms', 'gf_new_form' );
-    remove_submenu_page( 'gf_edit_forms', 'gf_update' );
-    remove_submenu_page( 'gf_edit_forms', 'gf_settings' );
-    remove_submenu_page( 'gf_edit_forms', 'gf_help' );
-    remove_submenu_page( 'gf_edit_forms', 'gf_export' );
-    remove_submenu_page( 'gf_edit_forms', 'gf_addons' );
+    // remove_submenu_page( 'gf_edit_forms', 'gf_new_form' );
+    // remove_submenu_page( 'gf_edit_forms', 'gf_update' );
+    // remove_submenu_page( 'gf_edit_forms', 'gf_settings' );
+    // remove_submenu_page( 'gf_edit_forms', 'gf_help' );
+    // remove_submenu_page( 'gf_edit_forms', 'gf_export' );
+    // remove_submenu_page( 'gf_edit_forms', 'gf_addons' );
 
 }
 
