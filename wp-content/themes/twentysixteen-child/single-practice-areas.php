@@ -1,6 +1,11 @@
 <?php get_header(); ?>
 
-<?php $bannerImage = get_field('post_practice_banner_image'); ?>
+<?php 
+$parentPost = get_post_ancestors($post);
+$postID = (empty($parentPost)) ? $post->ID : $parentPost[0];
+ ?>
+
+<?php $bannerImage = get_field('post_practice_banner_image', $postID); ?>
 
 <!--Banner-->
 <div id="banner-container" class="content-section" style="background: linear-gradient(rgba(3,16,41,0.78),rgba(3,16,41,0.78)),url(<?php echo $bannerImage['url']; ?>);">
@@ -70,12 +75,12 @@
         <div class="row">
             <div class="col-lg-5 text-center">
                 <div class="embed-container">
-                    <?php the_field('post_practice_youtube_url'); ?>
+                    <?php the_field('post_practice_youtube_url', $postID); ?>
                 </div>
             </div>
             <div class="col-lg-7">
-                <h2 class="section-title white youtube-title"><?php the_field('post_practice_youtube_title'); ?></h2>
-                <p class="section-description white youtube-description"><?php the_field('post_practice_youtube_description'); ?></p>
+                <h2 class="section-title white youtube-title"><?php the_field('post_practice_youtube_title', $postID); ?></h2>
+                <p class="section-description white youtube-description"><?php the_field('post_practice_youtube_description', $postID); ?></p>
             </div>
         </div>
     </div>
@@ -91,8 +96,6 @@
         </div>
         <div class="row">
             <?php
-            $parentPost = get_post_ancestors($post);
-            $postID = (empty($parentPost)) ? $post->ID : $parentPost[0];
             if( have_rows('post_practice_tabs', $postID) ):
                 $tabs = '<div class="col-lg-5" id="services-tabs-title-container"><ul id="services-tabs-title-ul">';
                 $tabBody = '<div class="col-lg-7" id="services-tabs-body-container">';
