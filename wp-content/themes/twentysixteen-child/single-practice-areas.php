@@ -77,6 +77,7 @@ $postID = (empty($parentPost)) ? $post->ID : $parentPost[0];
                 <div class="embed-container">
                     <?php the_field('post_practice_youtube_url', $postID); ?>
                 </div>
+                <span id="youtube-caption"><?php the_field('post_practice_youtube_youtube_caption'); ?></span>
             </div>
             <div class="col-lg-7">
                 <h2 class="section-title white youtube-title"><?php the_field('post_practice_youtube_title', $postID); ?></h2>

@@ -154,6 +154,10 @@ p {
     color: #888;
 }
 /* Youtube */
+#youtube-caption {
+    color: #ddd;
+    font-style: italic;
+}
 .youtube-title {
     margin: 1em 0 0;
     text-transform: uppercase;
