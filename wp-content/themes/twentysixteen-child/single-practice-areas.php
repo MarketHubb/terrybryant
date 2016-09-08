@@ -173,7 +173,7 @@ $postID = (empty($parentPost)) ? $post->ID : $parentPost[0];
                 while ( have_rows('global_practice_logos', 'option') ) : the_row();
                     $logoImage = get_sub_field('global_practice_logo');
 
-                    $logos .= '<div class="col-xs-3">';
+                    $logos .= '<div class="col-xs-4">';
                     $logos .= '<img class="logo-img" src="' . $logoImage['url'] . '">';
                     $logos .= '</div>';
                 endwhile;
