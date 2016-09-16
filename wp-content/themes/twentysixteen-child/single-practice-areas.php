@@ -96,12 +96,18 @@ $postID = (empty($parentPost)) ? $post->ID : $parentPost[0];
             </div>
         </div>
         <div class="row">
+            <?php if (have_rows('post_practice_tabs')) {
+                $tabsPostID = $post->ID;
+            } else {
+                $tabsPostID = $postID;
+            } 
+            ?>
             <?php
-            if( have_rows('post_practice_tabs', $postID) ):
+            if( have_rows('post_practice_tabs', $tabsPostID) ):
                 $tabs = '<div class="col-lg-5" id="services-tabs-title-container"><ul id="services-tabs-title-ul">';
                 $tabBody = '<div class="col-lg-7" id="services-tabs-body-container">';
                 $i = 1;
-                while( have_rows('post_practice_tabs', $postID) ) : the_row();
+                while( have_rows('post_practice_tabs', $tabsPostID) ) : the_row();
                     $activeClass = ($i === 1) ? ' active' : '';
                     $tabName = strtolower(str_replace(' ', '-', get_sub_field('post_practice_tab_title')));
 
