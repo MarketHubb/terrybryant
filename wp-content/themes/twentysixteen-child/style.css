@@ -107,8 +107,8 @@ p {
 }
 /* Banner */
 #banner-container {
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
     color: #fff;
     padding: 1em 0 6em;
 }
@@ -335,6 +335,81 @@ img.services-modal-header-logo {
 #services-form-body-container {
     margin-top: 2rem;
 }
+#services-form-body-container ::-webkit-input-placeholder {
+    color: #fff !important;
+} 
+#services-form-body-container ::-moz-placeholder {
+    color: #fff !important;
+}
+#services-form-body-container :-ms-input-placeholder {
+    color: #fff !important;
+}
+#services-form-body-container :-moz-placeholder {
+    color: #fff !important;
+}
+/* Form Display */
+#banner-text-display-container {
+    margin-top: 4em;
+}
+#banner-text-display-container h1 {
+    font-size: 4em;
+    margin-bottom: 20px;
+}
+#banner-text-display-container  p {
+    font-size: 1.75em;
+    line-height: 1.5;
+}
+#banner-form-display-container {
+    background-color: rgba(255,255,255, .85);
+    border-radius: 3px;
+    padding-left: 0;
+    padding-right: 0;
+    border: 2px solid #fff;
+}
+#banner-form-display-container div.gform_wrapper {
+    border-right: none;
+    padding: 1em 3em;
+}
+#banner-form-display-container .form-title {
+    color: #fff;
+    margin-bottom: 0;
+    margin-top: 0;
+    background: rgb(3,16,41);
+    padding: 2em;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    font-weight: normal;
+}
+#banner-form-display-container li.gfield:not(.disclaimer) label {
+    display: none !important;
+} 
+#banner-form-display-container ::-webkit-input-placeholder {
+    color: #444 !important;
+} 
+#banner-form-display-container ::-moz-placeholder {
+    color: #444 !important;
+}
+#banner-form-display-container :-ms-input-placeholder {
+    color: #444 !important;
+}
+#banner-form-display-container :-moz-placeholder {
+    color: #444 !important;
+}
+#banner-form-display-container input:not(#gform_submit_button_1), #banner-form-display-container textarea {
+    color: #000 !important;
+    padding: 7px 10px !important;
+    border: 1px solid #bbb;
+}
+#banner-form-display-container textarea  {
+    height: 80px !important;
+}
+#banner-form-display-container input#gform_submit_button_1 {
+    width: 100%;
+}
+#banner-form-display-container .gfield_checkbox li label {
+    color: #555;
+}
+
 .services-modal-img {
     margin-bottom: 1em;
     border-radius: 1000px;

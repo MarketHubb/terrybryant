@@ -24,20 +24,17 @@ $postID = (empty($parentPost)) ? $post->ID : $parentPost[0];
                 </div>
             </div>
         </div>
-        <div class="row">
-            <div class="col-lg-12" id="banner-text-container">
-                <div class="text-center">
-                    <h1><?php the_field('post_practice_banner_title'); ?></h1>
-                    <p><?php the_field('post_practice_banner_description'); ?></p>
-
-                    <?php $btnText = (get_field('post_practice_banner_button_text') != "") ? get_field('post_practice_banner_button_text') : get_field('global_practice_banner_button_text', 'option'); ?>
-                    <?php $btnCta = (get_field('post_practice_banner_button_cta') != "") ? get_field('post_practice_banner_button_cta') : get_field('global_practice_banner_button_cta', 'option'); ?>
-                    <button class="banner-btn cta-btn" data-toggle="modal" data-target="#formModal"><?php echo $btnText; ?></button>
-                    <br />
-                    <span><?php echo $btnCta; ?></span>
-                </div>
-            </div>
-        </div>
+        <?php 
+        $var = rand(0,1);
+        if ($var === 0) {
+            $formType = 'Display';
+            include(locate_template('content-banner-form-display.php'));
+        } else {
+            $formType = 'Hidden';
+            include(locate_template('content-banner-form-hidden.php'));
+        }
+         ?>
+         <?php $dynamicFormFields = array('type' => $formType); ?>
     </div>
 </div>
 
@@ -249,7 +246,7 @@ $postID = (empty($parentPost)) ? $post->ID : $parentPost[0];
                 <div class="row" id="services-form-body-container">
                     <div class="col-sm-12 col-md-7 col-lg-7">
                         <h6 class="form-title"><?php the_field('global_practice_form_lead', 'option'); ?></h6>
-                        <?php gravity_form(1, $display_title=false, $display_description=false, $display_inactive=false, $field_values=$dynamic, $ajax=true, $tabindex); ?>
+                        <?php gravity_form(1, $display_title=false, $display_description=false, $display_inactive=false, $field_values=$dynamicFormFields, $ajax=true, $tabindex); ?>
                     </div>
                     <div class="col-sm-12 col-md-5 col-lg-5">
                         <div class="text-center">
