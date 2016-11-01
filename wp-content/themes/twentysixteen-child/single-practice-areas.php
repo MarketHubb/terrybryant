@@ -17,7 +17,7 @@ $postID = (empty($parentPost)) ? $post->ID : $parentPost[0];
             </div>
             <div class="col-xs-6" id="phone-container">
                 <div class="phone-lead">
-                    <a href="tel:1-866-669-7720" id="phone-btn">
+                    <a href="tel:1-866-669-7720" class="phone-number" id="phone-btn">
                         <i class="fa <?php the_field('global_practice_phone_icon', 'option'); ?> fa-lg"></i><?php the_field('global_practice_phone_lead', 'option'); ?>
                     </a>
                         <a href="tel:1-866-669-7720" id="phone-number"><?php the_field('global_practice_phone_number', 'option'); ?></a>
