@@ -62,7 +62,7 @@ function mh_remove_menus()
     /*remove_menu_page( 'tools.php' );*/                  //Tools
     remove_menu_page( 'options-general.php' );        //Settings
     remove_menu_page( 'cptui_main_menu' );            //Custom Post Type UI
-    remove_menu_page( 'edit.php?post_type=acf-field-group' ); //ACF
+    //remove_menu_page( 'edit.php?post_type=acf-field-group' ); //ACF
     remove_menu_page( 'admin.php?page=wpseo_dashboard' ); //Yoast
 
     // Submenu pages

@@ -19,7 +19,7 @@ p {
     color: #fff;
 }
 .cta-btn, form input[type="submit"] {
-    background-color: #ea703f;
+    background-color: #f76227;
     color: #ffffff;
     border-radius: 5px;
     text-transform: uppercase;
@@ -28,7 +28,7 @@ p {
     border-color: none;
 }
 .cta-btn:hover, form input[type="submit"]:hover {
-    background-color: #f76227;
+    background-color: #ea703f;
     color: #fff;
     text-decoration: none;
 }
@@ -90,7 +90,7 @@ p {
     font-size: 1.5em;
     float: left;
     font-weight: bold;
-    padding: 5px 15px;
+    padding: 3px 15px;
 }
 .phone-span a {
     color: #fff;
@@ -139,6 +139,9 @@ p {
     display: inline-block;
     padding: 12px 22px;
     margin-bottom: 1em;
+}
+.banner-btn i {
+    padding-left: 7px;
 }
 /* Callout */
 .callout-icons {
@@ -551,6 +554,18 @@ label#label_1_5_1 {
     margin-bottom: 35px;
 }
 /* Media Queries */
+@media (max-width:550px) {
+    .phone-lead .phone-span:first-of-type {
+        display: none;
+    }
+    .phone-lead .phone-span:last-of-type {
+        border-radius: 5px;
+        font-size: 1.2em;
+        padding: 3px 10px;
+    }
+
+
+}
 @media (max-width:768px) {
     .banner-btn, form input[type="submit"] {
         font-size: 15px;

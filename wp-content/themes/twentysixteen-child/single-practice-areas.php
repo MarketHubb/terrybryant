@@ -28,13 +28,15 @@ $postID = (empty($parentPost)) ? $post->ID : $parentPost[0];
         </div>
         <?php 
         $var = rand(0,1);
-        if ($var === 0) {
+        /*if ($var === 0) {
             $formType = 'Display';
             include(locate_template('content-banner-form-display.php'));
         } else {
             $formType = 'Hidden';
             include(locate_template('content-banner-form-hidden.php'));
-        }
+        }*/
+        $formType = 'Hidden';
+        include(locate_template('content-banner-form-hidden.php'));
          ?>
          <?php $dynamicFormFields = array('type' => $formType); ?>
     </div>
@@ -69,6 +71,7 @@ $postID = (empty($parentPost)) ? $post->ID : $parentPost[0];
 </div>
 
 <!--Youtube-->
+<?php if (get_field('post_practice_include_youtube_section') == false) : ?>
 <div id="youtube-container" class="content-section" style="background: linear-gradient(rgba(200, 117, 5,0.9),rgba(200, 117, 5,0.9)),url(<?php echo $bannerImage['url']; ?>);">
     <div class="container">
         <div class="row">
@@ -85,7 +88,7 @@ $postID = (empty($parentPost)) ? $post->ID : $parentPost[0];
         </div>
     </div>
 </div>
-
+<?php endif; ?>
 <!--Tabs-->
 <div id="tabs-container" class="content-section">
     <div class="container">

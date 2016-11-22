@@ -6,7 +6,8 @@
 
             <?php $btnText = (get_field('post_practice_banner_button_text') != "") ? get_field('post_practice_banner_button_text') : get_field('global_practice_banner_button_text', 'option'); ?>
             <?php $btnCta = (get_field('post_practice_banner_button_cta') != "") ? get_field('post_practice_banner_button_cta') : get_field('global_practice_banner_button_cta', 'option'); ?>
-            <button class="banner-btn cta-btn" data-toggle="modal" data-target="#formModal"><?php echo $btnText; ?></button>
+            <button class="banner-btn cta-btn" data-toggle="modal" data-target="#formModal"><?php echo $btnText; ?><i class="fa fa-chevron-right" aria-hidden="true"></i>
+            </button>
             <br />
             <span><?php echo $btnCta; ?></span>
         </div>
