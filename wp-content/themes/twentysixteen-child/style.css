@@ -80,18 +80,29 @@ p {
 }
 .phone-lead {
     padding-top: 5px;
+    float: right;
 }
 #phone-container {
     text-align: right;
 }
-#phone-btn {
+.phone-span {
     background: #f76227;
-    padding: 3px 10px;
-    border-radius: 4px;
+    font-size: 1.5em;
+    float: left;
+    font-weight: bold;
+    padding: 5px 15px;
+}
+.phone-span a {
     color: #fff;
-    font-size: 1.2em;
-    margin-right: 10px;
-    display: inline-block;
+}
+.phone-lead .phone-span:first-of-type {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-right: 1px solid #FFB090;
+}
+.phone-lead .phone-span:last-of-type {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
 }
 #phone-number {
     font-size: 1.5em;
