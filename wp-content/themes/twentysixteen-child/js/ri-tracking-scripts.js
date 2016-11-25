@@ -8,5 +8,5 @@ jQuery(document).ready(function($) {
 	/**
 	 * Google Adword Call Conversion Tracking
 	 */
-	_googWcmGet('phone-number', '1-866-669-7720');
+	_googWcmGet('phone-number', '866-669-7720');
 });

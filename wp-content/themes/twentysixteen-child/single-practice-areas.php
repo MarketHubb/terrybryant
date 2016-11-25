@@ -19,9 +19,7 @@ $postID = (empty($parentPost)) ? $post->ID : $parentPost[0];
                 <div class="phone-lead">
                     <span class="phone-span"><i class="fa <?php the_field('global_practice_phone_icon', 'option'); ?> fa-lg"></i></span>
                     <span class="phone-span">
-                        <a href="tel:1-866-669-7720" class="phone-number" id="phone-btn">
-                            <?php the_field('global_practice_phone_lead', 'option'); ?>
-                        </a>
+                        <a href="tel:866-669-7720" class="phone-number" id="phone-btn">866-669-7720</a>
                     </span>
                 </div>
             </div>
@@ -71,7 +69,8 @@ $postID = (empty($parentPost)) ? $post->ID : $parentPost[0];
 </div>
 
 <!--Youtube-->
-<?php if (get_field('post_practice_include_youtube_section') == false) : ?>
+<?php $includeYT = get_field('post_practice_include_youtube_section'); ?>
+<?php if ($includeYT == 0) : ?>
 <div id="youtube-container" class="content-section" style="background: linear-gradient(rgba(200, 117, 5,0.9),rgba(200, 117, 5,0.9)),url(<?php echo $bannerImage['url']; ?>);">
     <div class="container">
         <div class="row">
